@@ -1,0 +1,18 @@
+# Ignorar carpeta .vs/ generada por Visual Studio
+.vs/
+
+# Binarios y archivos de compilación
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Archivos de usuario (configuraciones locales)
+*.user
+*.suo
+
+# Otros archivos temporales
+*.cache
+*.log
+*.tmp
