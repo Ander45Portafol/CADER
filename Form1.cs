@@ -16,5 +16,36 @@ namespace CADER
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            BtnInicio.BackColor = Color.FromArgb(63,63,63);
+            BtnInicio.ForeColor = Color.FromArgb(217,217,217);
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            BtnInicio.BackColor = Color.FromArgb(217, 217, 217);
+            BtnInicio.ForeColor = Color.FromArgb(63, 63, 63);
+        }
+
+        private void BtnInicio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
