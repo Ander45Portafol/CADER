@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.PanelContenido = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.BtnDonaciones = new System.Windows.Forms.Button();
@@ -67,6 +68,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1197, 46);
             this.panel2.TabIndex = 1;
+            // 
+            // PanelContenido
+            // 
+            this.PanelContenido.BackColor = System.Drawing.Color.White;
+            this.PanelContenido.Location = new System.Drawing.Point(231, 41);
+            this.PanelContenido.Name = "PanelContenido";
+            this.PanelContenido.Size = new System.Drawing.Size(1190, 821);
+            this.PanelContenido.TabIndex = 8;
             // 
             // label1
             // 
@@ -189,6 +198,7 @@
             this.BtnMobiliario.Text = "Mobiliario";
             this.BtnMobiliario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnMobiliario.UseVisualStyleBackColor = true;
+            this.BtnMobiliario.Click += new System.EventHandler(this.BtnMobiliario_Click);
             // 
             // BtnInicio
             // 
@@ -215,9 +225,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1421, 861);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.PanelContenido);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -241,6 +253,7 @@
         private System.Windows.Forms.Button BtnDonaciones;
         private System.Windows.Forms.Button BtnServicios;
         private System.Windows.Forms.Button BtnCerrar;
+        private System.Windows.Forms.Panel PanelContenido;
     }
 }
 
