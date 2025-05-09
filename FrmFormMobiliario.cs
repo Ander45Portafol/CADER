@@ -16,5 +16,10 @@ namespace CADER
         {
             InitializeComponent();
         }
+
+        private void BtnCerrarForm_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
