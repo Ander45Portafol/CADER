@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFormMobiliario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFormMobiliario.Designer.cs">
+      <DependentUpon>FrmFormMobiliario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,13 +70,13 @@
     <Compile Include="FrmMobiliario.Designer.cs">
       <DependentUpon>FrmMobiliario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Personalizados\RoundedButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFormMobiliario.resx">
+      <DependentUpon>FrmFormMobiliario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>

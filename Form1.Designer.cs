@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.PanelContenido = new System.Windows.Forms.Panel();
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.BtnDonaciones = new System.Windows.Forms.Button();
             this.BtnServicios = new System.Windows.Forms.Button();
@@ -37,9 +39,7 @@
             this.BtnFinanzas = new System.Windows.Forms.Button();
             this.BtnMobiliario = new System.Windows.Forms.Button();
             this.BtnInicio = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.PanelContenido = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -57,8 +57,25 @@
             this.panel1.Controls.Add(this.BtnInicio);
             this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(272, 681);
+            this.panel1.Size = new System.Drawing.Size(208, 681);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(205, -1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(931, 43);
+            this.panel2.TabIndex = 1;
+            // 
+            // PanelContenido
+            // 
+            this.PanelContenido.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.PanelContenido.Location = new System.Drawing.Point(214, 48);
+            this.PanelContenido.Name = "PanelContenido";
+            this.PanelContenido.Size = new System.Drawing.Size(907, 617);
+            this.PanelContenido.TabIndex = 2;
             // 
             // BtnCerrar
             // 
@@ -86,7 +103,7 @@
             this.BtnDonaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnDonaciones.Location = new System.Drawing.Point(4, 425);
             this.BtnDonaciones.Name = "BtnDonaciones";
-            this.BtnDonaciones.Size = new System.Drawing.Size(268, 41);
+            this.BtnDonaciones.Size = new System.Drawing.Size(204, 41);
             this.BtnDonaciones.TabIndex = 6;
             this.BtnDonaciones.Text = "Donaciones";
             this.BtnDonaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -102,7 +119,7 @@
             this.BtnServicios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnServicios.Location = new System.Drawing.Point(4, 376);
             this.BtnServicios.Name = "BtnServicios";
-            this.BtnServicios.Size = new System.Drawing.Size(265, 43);
+            this.BtnServicios.Size = new System.Drawing.Size(204, 43);
             this.BtnServicios.TabIndex = 5;
             this.BtnServicios.Text = "Servicios";
             this.BtnServicios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -118,7 +135,7 @@
             this.BtnAdministracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAdministracion.Location = new System.Drawing.Point(4, 322);
             this.BtnAdministracion.Name = "BtnAdministracion";
-            this.BtnAdministracion.Size = new System.Drawing.Size(268, 48);
+            this.BtnAdministracion.Size = new System.Drawing.Size(213, 48);
             this.BtnAdministracion.TabIndex = 4;
             this.BtnAdministracion.Text = "Administración";
             this.BtnAdministracion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -135,7 +152,7 @@
             this.BtnEventos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEventos.Location = new System.Drawing.Point(4, 269);
             this.BtnEventos.Name = "BtnEventos";
-            this.BtnEventos.Size = new System.Drawing.Size(268, 47);
+            this.BtnEventos.Size = new System.Drawing.Size(204, 47);
             this.BtnEventos.TabIndex = 3;
             this.BtnEventos.Text = "Eventos";
             this.BtnEventos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -151,7 +168,7 @@
             this.BtnFinanzas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnFinanzas.Location = new System.Drawing.Point(4, 223);
             this.BtnFinanzas.Name = "BtnFinanzas";
-            this.BtnFinanzas.Size = new System.Drawing.Size(268, 40);
+            this.BtnFinanzas.Size = new System.Drawing.Size(204, 40);
             this.BtnFinanzas.TabIndex = 2;
             this.BtnFinanzas.Text = "Finanzas";
             this.BtnFinanzas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -167,7 +184,7 @@
             this.BtnMobiliario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnMobiliario.Location = new System.Drawing.Point(4, 173);
             this.BtnMobiliario.Name = "BtnMobiliario";
-            this.BtnMobiliario.Size = new System.Drawing.Size(268, 44);
+            this.BtnMobiliario.Size = new System.Drawing.Size(213, 44);
             this.BtnMobiliario.TabIndex = 1;
             this.BtnMobiliario.Text = "Mobiliario";
             this.BtnMobiliario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -184,7 +201,7 @@
             this.BtnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnInicio.Location = new System.Drawing.Point(4, 126);
             this.BtnInicio.Name = "BtnInicio";
-            this.BtnInicio.Size = new System.Drawing.Size(268, 41);
+            this.BtnInicio.Size = new System.Drawing.Size(204, 41);
             this.BtnInicio.TabIndex = 0;
             this.BtnInicio.Text = "Inicio";
             this.BtnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -194,31 +211,14 @@
             this.BtnInicio.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             this.BtnInicio.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(256, -1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(880, 43);
-            this.panel2.TabIndex = 1;
-            // 
             // label1
             // 
             this.label1.Image = global::CADER.Properties.Resources.x_regular_24;
-            this.label1.Location = new System.Drawing.Point(806, 0);
+            this.label1.Location = new System.Drawing.Point(857, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 33);
             this.label1.TabIndex = 0;
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // PanelContenido
-            // 
-            this.PanelContenido.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.PanelContenido.Location = new System.Drawing.Point(278, 48);
-            this.PanelContenido.Name = "PanelContenido";
-            this.PanelContenido.Size = new System.Drawing.Size(843, 617);
-            this.PanelContenido.TabIndex = 2;
             // 
             // Form1
             // 
