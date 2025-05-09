@@ -173,6 +173,16 @@ namespace CADER.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap plus_circle_regular_24 {
+            get {
+                object obj = ResourceManager.GetObject("plus-circle-regular-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap x_regular_24 {
             get {
                 object obj = ResourceManager.GetObject("x-regular-24", resourceCulture);

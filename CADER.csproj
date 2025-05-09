@@ -64,6 +64,9 @@
     <Compile Include="FrmMobiliario.Designer.cs">
       <DependentUpon>FrmMobiliario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Personalizados\RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -133,6 +136,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\log-out-solid-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-circle-regular-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controles\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
