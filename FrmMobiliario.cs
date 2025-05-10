@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controller;
 
 namespace CADER
 {
@@ -15,6 +16,7 @@ namespace CADER
         public FrmMobiliario()
         {
             InitializeComponent();
+            LblDay.Text = DateTime.Today.ToString("yyyy-MM-dd");
         }
 
         private void FrmMobiliario_Load(object sender, EventArgs e)
@@ -29,6 +31,13 @@ namespace CADER
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
+            if (Class1.ConexionVerificar())
+            {
+                MessageBox.Show("Si existe conexion");
+            }
+            else {
+                MessageBox.Show("No existe conexion");
+            }
             FrmFormMobiliario formMobiliario = new FrmFormMobiliario();
             formMobiliario.ShowDialog();
         }

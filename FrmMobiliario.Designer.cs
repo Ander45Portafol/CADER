@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LblDay = new System.Windows.Forms.Label();
             this.TxtBuscar = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.BtnAgregar = new System.Windows.Forms.Button();
@@ -51,22 +51,22 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.LblDay);
             this.panel1.Controls.Add(this.TxtBuscar);
             this.panel1.Location = new System.Drawing.Point(34, 89);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(845, 78);
             this.panel1.TabIndex = 8;
             // 
-            // label2
+            // LblDay
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(709, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 19);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "dd/mm/YYYY";
+            this.LblDay.AutoSize = true;
+            this.LblDay.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDay.Location = new System.Drawing.Point(709, 27);
+            this.LblDay.Name = "LblDay";
+            this.LblDay.Size = new System.Drawing.Size(123, 19);
+            this.LblDay.TabIndex = 3;
+            this.LblDay.Text = "dd/mm/YYYY";
             // 
             // TxtBuscar
             // 
@@ -74,6 +74,7 @@
             this.TxtBuscar.Name = "TxtBuscar";
             this.TxtBuscar.Size = new System.Drawing.Size(463, 23);
             this.TxtBuscar.TabIndex = 0;
+            this.TxtBuscar.Text = "Buscar";
             // 
             // dataGridView1
             // 
@@ -127,7 +128,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LblDay;
         private System.Windows.Forms.TextBox TxtBuscar;
         private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.DataGridView dataGridView1;
