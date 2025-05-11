@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Controller;
+using Controlador;
 
 namespace CADER
 {
@@ -31,7 +31,7 @@ namespace CADER
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            if (Class1.ConexionVerificar())
+            if (ControllerConexion.ConexionVerificar())
             {
                 MessageBox.Show("Si existe conexion");
             }

@@ -153,9 +153,9 @@
     <None Include="Resources\x-regular-241.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Controller\Controller.csproj">
-      <Project>{a133ef34-3124-4fe8-b2d4-5ad7d84b607e}</Project>
-      <Name>Controller</Name>
+    <ProjectReference Include="Controlador\Controlador.csproj">
+      <Project>{74fac172-18db-47ae-876f-bd4224dab38e}</Project>
+      <Name>Controlador</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
