@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.BtnCerrarForm = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbObjeto = new System.Windows.Forms.ComboBox();
+            this.cmbGrupo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -54,23 +54,23 @@
             this.BtnCerrarForm.UseVisualStyleBackColor = false;
             this.BtnCerrarForm.Click += new System.EventHandler(this.BtnCerrarForm_Click);
             // 
-            // comboBox1
+            // cmbObjeto
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(71, 87);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(280, 24);
-            this.comboBox1.TabIndex = 1;
+            this.cmbObjeto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbObjeto.FormattingEnabled = true;
+            this.cmbObjeto.Location = new System.Drawing.Point(71, 87);
+            this.cmbObjeto.Name = "cmbObjeto";
+            this.cmbObjeto.Size = new System.Drawing.Size(280, 24);
+            this.cmbObjeto.TabIndex = 1;
             // 
-            // comboBox2
+            // cmbGrupo
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(424, 87);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(280, 24);
-            this.comboBox2.TabIndex = 2;
+            this.cmbGrupo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGrupo.FormattingEnabled = true;
+            this.cmbGrupo.Location = new System.Drawing.Point(424, 87);
+            this.cmbGrupo.Name = "cmbGrupo";
+            this.cmbGrupo.Size = new System.Drawing.Size(280, 24);
+            this.cmbGrupo.TabIndex = 2;
             // 
             // label1
             // 
@@ -78,7 +78,7 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(67, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 26);
+            this.label1.Size = new System.Drawing.Size(77, 21);
             this.label1.TabIndex = 3;
             this.label1.Text = "Objeto:";
             // 
@@ -88,7 +88,7 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(420, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 26);
+            this.label2.Size = new System.Drawing.Size(71, 21);
             this.label2.TabIndex = 4;
             this.label2.Text = "Grupo:";
             // 
@@ -112,7 +112,7 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(67, 148);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 26);
+            this.label3.Size = new System.Drawing.Size(136, 21);
             this.label3.TabIndex = 7;
             this.label3.Text = "Fecha de Uso:";
             // 
@@ -122,7 +122,7 @@
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(420, 148);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(248, 26);
+            this.label4.Size = new System.Drawing.Size(198, 21);
             this.label4.TabIndex = 8;
             this.label4.Text = "Fecha para Regresar:";
             // 
@@ -151,8 +151,8 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbGrupo);
+            this.Controls.Add(this.cmbObjeto);
             this.Controls.Add(this.BtnCerrarForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmFormMobiliario";
@@ -165,8 +165,8 @@
         #endregion
 
         private System.Windows.Forms.Button BtnCerrarForm;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbObjeto;
+        private System.Windows.Forms.ComboBox cmbGrupo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

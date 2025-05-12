@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LblDay = new System.Windows.Forms.Label();
             this.TxtBuscar = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DgvMobiliario = new System.Windows.Forms.DataGridView();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvMobiliario)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -70,21 +72,43 @@
             // 
             // TxtBuscar
             // 
+            this.TxtBuscar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBuscar.Location = new System.Drawing.Point(20, 23);
             this.TxtBuscar.Name = "TxtBuscar";
-            this.TxtBuscar.Size = new System.Drawing.Size(463, 23);
+            this.TxtBuscar.Size = new System.Drawing.Size(579, 35);
             this.TxtBuscar.TabIndex = 0;
             this.TxtBuscar.Text = "Buscar";
             // 
-            // dataGridView1
+            // DgvMobiliario
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 187);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(845, 418);
-            this.dataGridView1.TabIndex = 9;
+            this.DgvMobiliario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvMobiliario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvMobiliario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DgvMobiliario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvMobiliario.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DgvMobiliario.Location = new System.Drawing.Point(34, 187);
+            this.DgvMobiliario.Name = "DgvMobiliario";
+            this.DgvMobiliario.ReadOnly = true;
+            this.DgvMobiliario.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.DgvMobiliario.RowTemplate.Height = 24;
+            this.DgvMobiliario.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.DgvMobiliario.Size = new System.Drawing.Size(845, 418);
+            this.DgvMobiliario.StandardTab = true;
+            this.DgvMobiliario.TabIndex = 9;
             // 
             // BtnAgregar
             // 
@@ -109,7 +133,7 @@
             this.ClientSize = new System.Drawing.Size(904, 617);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BtnAgregar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DgvMobiliario);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -118,7 +142,7 @@
             this.Load += new System.EventHandler(this.FrmMobiliario_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvMobiliario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,6 +155,6 @@
         private System.Windows.Forms.Label LblDay;
         private System.Windows.Forms.TextBox TxtBuscar;
         private System.Windows.Forms.Button BtnAgregar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DgvMobiliario;
     }
 }

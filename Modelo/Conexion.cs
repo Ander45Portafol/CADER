@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -9,24 +11,17 @@ namespace Modelo
 {
     public class Conexion
     {
-        public static bool VerficiarConexion()
+        //Variable gobla que guarda el estado de la conexion
+
+        //Metodo de tipo Bool para realizar la conexion a la DB y asi mismo devolver false o true si existe la conexion;
+        public SqlConnection DatabaseConnection()
         {
             string DB = "CADER";
             string user = "sa";
             string password = "123";
             string connectionString = "Server=localhost;Database=" + DB+ ";User= "+user+";Password="+password+";";
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    connection.Open();
-                    return true;
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
-            }
+            SqlConnection _connection = new SqlConnection(connectionString);      
+            return _connection;
         }
     }
 }
