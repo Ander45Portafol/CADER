@@ -10,11 +10,11 @@ namespace Controlador
 {
     public class MobiliarioController
     {
-        public int id_mobiliario;
-        public int id_objeto;
-        public int id_grupo;
-        public DateTime fecha_uso;
-        public DateTime fecha_regreso;
+        private int id_mobiliario;
+        private int id_objeto;
+        private int id_grupo;
+        private string fecha_uso;
+        private string fecha_regreso;
 
         public int Id_Mobiliario {
             get => id_mobiliario;
@@ -28,11 +28,11 @@ namespace Controlador
             get => id_grupo;
             set => id_grupo = value;
         }
-        public DateTime Fecha_Uso { 
+        public string Fecha_Uso { 
             get => fecha_uso;
             set => fecha_uso = value;
         }
-        public DateTime Fecha_Regreso { 
+        public string Fecha_Regreso { 
             get => fecha_regreso;
             set => fecha_regreso = value;
         }
@@ -51,6 +51,45 @@ namespace Controlador
         {
             DataTable data = ModelMobilirio.CargarGrupos(out string message);
             return data;
+        }
+        public  bool RegistrarMobiliario( out string message)
+        {
+            try
+            {
+                return ModelMobilirio.InsertarMobiliario(id_objeto, id_grupo, fecha_uso, fecha_regreso,out message);
+            }
+            catch (Exception ex)
+            {
+                message = $"Error al registrar la accion: {ex.Message}";
+                return false;
+            }
+        }
+        public DataTable CargarMobiliario() {
+            DataTable datos = ModelMobilirio.CargarMobiliario(id_mobiliario, out string message);
+            return datos;
+        }
+        public bool ActualizarMobiliario(out string message)
+        {
+            try
+            {
+                return ModelMobilirio.ActualizarMobiliario(id_mobiliario,id_objeto, id_grupo, fecha_uso, fecha_regreso, out message);
+            }
+            catch (Exception ex)
+            {
+                message = $"Error al actualizar la accion: {ex.Message}";
+                return false;
+            }
+        }
+        public bool EliminarMobiliario(out string message) {
+            try
+            {
+                return ModelMobilirio.EliminarMobiliario(id_mobiliario, out message);
+            }
+            catch (Exception ex)
+            {
+                message = $"Error al eliminar el registro: {ex.Message}";
+                return false;
+            }
         }
     }
 }

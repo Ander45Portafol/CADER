@@ -17,6 +17,7 @@ namespace CADER
         {
             InitializeComponent();
             LblDay.Text = DateTime.Today.ToString("yyyy-MM-dd");
+            CargarDatos();
         }
 
         private void FrmMobiliario_Load(object sender, EventArgs e)
@@ -32,9 +33,15 @@ namespace CADER
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
             FrmFormMobiliario formMobiliario = new FrmFormMobiliario();
+            formMobiliario.DatoAgregado += FormAgregar_DatoAgregado;
             formMobiliario.ShowDialog();
         }
-        void CargarDatos() {
+        private void FormAgregar_DatoAgregado(object sender, EventArgs e)
+        {
+            // Aquí es donde actualizas tu FormPrincipal
+            CargarDatos(); // Vuelve a cargar los datos en tu DataGridView o ListBox
+        }
+        public void CargarDatos() {
             try
             {
                 DataTable datos = MobiliarioController.CargarMobiliarios();
@@ -49,6 +56,30 @@ namespace CADER
             catch (Exception ex)
             {
                 MessageBox.Show($"Error al cargar los datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void DgvMobiliario_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DgvMobiliario_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verificar que el doble clic no sea en el encabezado de las columnas o filas
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                // Obtener la fila en la que se hizo doble clic
+                DataGridViewRow filaSeleccionada = DgvMobiliario.Rows[e.RowIndex];
+
+                // Suponiendo que el dato que quieres está en la columna con índice '0'
+                // Puedes cambiar el índice por el número de la columna que necesites.
+                int dato =Int32.Parse( filaSeleccionada.Cells[0].Value?.ToString());
+                //Abrimos el formulario pero usando el nuevo constructor para especificar que
+                //se actualizaran los datos
+                FrmFormMobiliario formMobiliario = new FrmFormMobiliario(dato);
+                formMobiliario.DatoAgregado += FormAgregar_DatoAgregado;
+                formMobiliario.Show();
             }
         }
     }

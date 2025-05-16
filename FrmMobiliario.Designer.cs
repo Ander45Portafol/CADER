@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LblDay = new System.Windows.Forms.Label();
@@ -75,7 +74,7 @@
             this.TxtBuscar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBuscar.Location = new System.Drawing.Point(20, 23);
             this.TxtBuscar.Name = "TxtBuscar";
-            this.TxtBuscar.Size = new System.Drawing.Size(579, 35);
+            this.TxtBuscar.Size = new System.Drawing.Size(579, 28);
             this.TxtBuscar.TabIndex = 0;
             this.TxtBuscar.Text = "Buscar";
             // 
@@ -85,21 +84,13 @@
             this.DgvMobiliario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DgvMobiliario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DgvMobiliario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvMobiliario.DefaultCellStyle = dataGridViewCellStyle2;
             this.DgvMobiliario.Location = new System.Drawing.Point(34, 187);
             this.DgvMobiliario.Name = "DgvMobiliario";
             this.DgvMobiliario.ReadOnly = true;
@@ -109,6 +100,8 @@
             this.DgvMobiliario.Size = new System.Drawing.Size(845, 418);
             this.DgvMobiliario.StandardTab = true;
             this.DgvMobiliario.TabIndex = 9;
+            this.DgvMobiliario.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvMobiliario_CellDoubleClick);
+            this.DgvMobiliario.DoubleClick += new System.EventHandler(this.DgvMobiliario_DoubleClick);
             // 
             // BtnAgregar
             // 
