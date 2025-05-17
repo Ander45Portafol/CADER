@@ -105,5 +105,11 @@ namespace CADER
             FrmServicios frm= new FrmServicios();
             CargarFormularioEnPanel(frm);
         }
+
+        private void BtnDonaciones_Click(object sender, EventArgs e)
+        {
+            FrmDonaciones frm= new FrmDonaciones();
+            CargarFormularioEnPanel(frm);
+        }
     }
 }

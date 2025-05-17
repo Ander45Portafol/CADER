@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="ModelCuota.cs" />
+    <Compile Include="ModelDonacion.cs" />
     <Compile Include="ModelEvento.cs" />
     <Compile Include="ModelMobiliario.cs" />
     <Compile Include="ModelOfrenda.cs" />

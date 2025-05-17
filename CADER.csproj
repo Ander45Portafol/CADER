@@ -82,6 +82,12 @@
     <Compile Include="FrmFormCuotas.Designer.cs">
       <DependentUpon>FrmFormCuotas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFormDonacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFormDonacion.Designer.cs">
+      <DependentUpon>FrmFormDonacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFormEventos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFormCuotas.resx">
       <DependentUpon>FrmFormCuotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFormDonacion.resx">
+      <DependentUpon>FrmFormDonacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFormEventos.resx">
       <DependentUpon>FrmFormEventos.cs</DependentUpon>
