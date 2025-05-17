@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.PanelContenido = new System.Windows.Forms.Panel();
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.BtnDonaciones = new System.Windows.Forms.Button();
             this.BtnServicios = new System.Windows.Forms.Button();
@@ -37,9 +39,7 @@
             this.BtnFinanzas = new System.Windows.Forms.Button();
             this.BtnMobiliario = new System.Windows.Forms.Button();
             this.BtnInicio = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.PanelContenido = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +59,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(208, 681);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(205, -1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(931, 43);
+            this.panel2.TabIndex = 1;
+            // 
+            // PanelContenido
+            // 
+            this.PanelContenido.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.PanelContenido.Location = new System.Drawing.Point(214, 48);
+            this.PanelContenido.Name = "PanelContenido";
+            this.PanelContenido.Size = new System.Drawing.Size(907, 617);
+            this.PanelContenido.TabIndex = 2;
             // 
             // BtnCerrar
             // 
@@ -107,6 +124,7 @@
             this.BtnServicios.Text = "Servicios";
             this.BtnServicios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnServicios.UseVisualStyleBackColor = true;
+            this.BtnServicios.Click += new System.EventHandler(this.BtnServicios_Click);
             // 
             // BtnAdministracion
             // 
@@ -140,6 +158,7 @@
             this.BtnEventos.Text = "Eventos";
             this.BtnEventos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEventos.UseVisualStyleBackColor = true;
+            this.BtnEventos.Click += new System.EventHandler(this.BtnEventos_Click);
             // 
             // BtnFinanzas
             // 
@@ -156,6 +175,7 @@
             this.BtnFinanzas.Text = "Finanzas";
             this.BtnFinanzas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnFinanzas.UseVisualStyleBackColor = true;
+            this.BtnFinanzas.Click += new System.EventHandler(this.BtnFinanzas_Click);
             // 
             // BtnMobiliario
             // 
@@ -194,15 +214,6 @@
             this.BtnInicio.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             this.BtnInicio.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(205, -1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(931, 43);
-            this.panel2.TabIndex = 1;
-            // 
             // label1
             // 
             this.label1.Image = global::CADER.Properties.Resources.x_regular_24;
@@ -211,14 +222,6 @@
             this.label1.Size = new System.Drawing.Size(59, 46);
             this.label1.TabIndex = 0;
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // PanelContenido
-            // 
-            this.PanelContenido.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.PanelContenido.Location = new System.Drawing.Point(214, 48);
-            this.PanelContenido.Name = "PanelContenido";
-            this.PanelContenido.Size = new System.Drawing.Size(907, 617);
-            this.PanelContenido.TabIndex = 2;
             // 
             // Form1
             // 

@@ -32,7 +32,6 @@ namespace CADER
             state_window = true;
             id_mob= id;
             BtnEliminar.Visible = true;
-            cmbObjeto.DisplayMember = "Hola papu";
             label5.Text = "MODIFICAR";
             CargarMobiliario();
             Cargar_Datos();
@@ -52,7 +51,7 @@ namespace CADER
                 // Crea una nueva fila para "Escoja una opción"
                 DataRow newRow = objetos.NewRow();
                 newRow["id_objeto"] = DBNull.Value; // Valor nulo para el IdAgencia
-                newRow["nombre_objeto"] = "Escoja una opción";
+                newRow["nombre_objeto"] = "Seleccione una opción";
                 objetos.Rows.InsertAt(newRow, 0); // 
                 // Asigna el DataTable al ComboBox de la libreria
                 cmbObjeto.DataSource = objetos;
@@ -63,7 +62,7 @@ namespace CADER
                 //Codigo para cargar la data en el control
                 DataRow row = grupos.NewRow();
                 row["id_grupo"] = DBNull.Value; // Valor nulo para el IdAgencia
-                row["nombre_grupo"] = "Escoja una opción";
+                row["nombre_grupo"] = "Seleccione una opción";
                 grupos.Rows.InsertAt(row, 0); // 
                 // Asigna el DataTable al ComboBox de la libreria
                 cmbGrupo.DataSource = grupos;
@@ -203,6 +202,7 @@ namespace CADER
             if (result==DialogResult.Yes)
             {
                 EliminarDatos(id_mob);
+                OnDatoAgregado(EventArgs.Empty);
                 this.Close();
             }
         }

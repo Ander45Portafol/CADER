@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnCerrarForm = new System.Windows.Forms.Button();
             this.cmbObjeto = new System.Windows.Forms.ComboBox();
             this.cmbGrupo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,21 +39,8 @@
             this.BtnConfirmar = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.BtnCerrarForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // BtnCerrarForm
-            // 
-            this.BtnCerrarForm.BackColor = System.Drawing.Color.Transparent;
-            this.BtnCerrarForm.FlatAppearance.BorderSize = 0;
-            this.BtnCerrarForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrarForm.Image = global::CADER.Properties.Resources.x_regular_241;
-            this.BtnCerrarForm.Location = new System.Drawing.Point(743, 2);
-            this.BtnCerrarForm.Name = "BtnCerrarForm";
-            this.BtnCerrarForm.Size = new System.Drawing.Size(53, 37);
-            this.BtnCerrarForm.TabIndex = 0;
-            this.BtnCerrarForm.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.BtnCerrarForm.UseVisualStyleBackColor = false;
-            this.BtnCerrarForm.Click += new System.EventHandler(this.BtnCerrarForm_Click);
             // 
             // cmbObjeto
             // 
@@ -164,6 +150,20 @@
             this.label5.Size = new System.Drawing.Size(82, 27);
             this.label5.TabIndex = 11;
             this.label5.Text = "label5";
+            // 
+            // BtnCerrarForm
+            // 
+            this.BtnCerrarForm.BackColor = System.Drawing.Color.Transparent;
+            this.BtnCerrarForm.FlatAppearance.BorderSize = 0;
+            this.BtnCerrarForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCerrarForm.Image = global::CADER.Properties.Resources.x_regular_241;
+            this.BtnCerrarForm.Location = new System.Drawing.Point(743, 2);
+            this.BtnCerrarForm.Name = "BtnCerrarForm";
+            this.BtnCerrarForm.Size = new System.Drawing.Size(53, 37);
+            this.BtnCerrarForm.TabIndex = 0;
+            this.BtnCerrarForm.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BtnCerrarForm.UseVisualStyleBackColor = false;
+            this.BtnCerrarForm.Click += new System.EventHandler(this.BtnCerrarForm_Click);
             // 
             // FrmFormMobiliario
             // 

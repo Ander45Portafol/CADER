@@ -46,17 +46,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmDonaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDonaciones.Designer.cs">
+      <DependentUpon>FrmDonaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCuotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCuotas.Designer.cs">
+      <DependentUpon>FrmCuotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEventos.Designer.cs">
+      <DependentUpon>FrmEventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFinanzas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFinanzas.Designer.cs">
+      <DependentUpon>FrmFinanzas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFormCuotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFormCuotas.Designer.cs">
+      <DependentUpon>FrmFormCuotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFormEventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFormEventos.Designer.cs">
+      <DependentUpon>FrmFormEventos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFormMobiliario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmFormMobiliario.Designer.cs">
       <DependentUpon>FrmFormMobiliario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFormOfrenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFormOfrenda.Designer.cs">
+      <DependentUpon>FrmFormOfrenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFormServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFormServicios.Designer.cs">
+      <DependentUpon>FrmFormServicios.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmInicio.cs">
       <SubType>Form</SubType>
@@ -76,19 +124,61 @@
     <Compile Include="FrmMobiliario.Designer.cs">
       <DependentUpon>FrmMobiliario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOfrendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOfrendas.Designer.cs">
+      <DependentUpon>FrmOfrendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServicios.Designer.cs">
+      <DependentUpon>FrmServicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCuotas.resx">
+      <DependentUpon>FrmCuotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDonaciones.resx">
+      <DependentUpon>FrmDonaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEventos.resx">
+      <DependentUpon>FrmEventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFinanzas.resx">
+      <DependentUpon>FrmFinanzas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFormCuotas.resx">
+      <DependentUpon>FrmFormCuotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFormEventos.resx">
+      <DependentUpon>FrmFormEventos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmFormMobiliario.resx">
       <DependentUpon>FrmFormMobiliario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFormOfrenda.resx">
+      <DependentUpon>FrmFormOfrenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFormServicios.resx">
+      <DependentUpon>FrmFormServicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMobiliario.resx">
       <DependentUpon>FrmMobiliario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOfrendas.resx">
+      <DependentUpon>FrmOfrendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServicios.resx">
+      <DependentUpon>FrmServicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -163,6 +253,15 @@
       <Project>{74fac172-18db-47ae-876f-bd4224dab38e}</Project>
       <Name>Controlador</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bxs-envelope 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bx-money 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bxs-report 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

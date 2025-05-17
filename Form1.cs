@@ -51,7 +51,7 @@ namespace CADER
             CargarFormularioEnPanel(frmInicio);
         }
         // Método para cargar un formulario en el panel
-        private void CargarFormularioEnPanel(Form formulario)
+        public void CargarFormularioEnPanel(Form formulario)
         {
             // Limpiar el panel antes de cargar un nuevo formulario
             PanelContenido.Controls.Clear();
@@ -86,6 +86,24 @@ namespace CADER
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnFinanzas_Click(object sender, EventArgs e)
+        {
+            FrmFinanzas frm= new FrmFinanzas();
+            CargarFormularioEnPanel(frm);
+        }
+
+        private void BtnEventos_Click(object sender, EventArgs e)
+        {
+            FrmEventos frm= new FrmEventos();
+            CargarFormularioEnPanel(frm);
+        }
+
+        private void BtnServicios_Click(object sender, EventArgs e)
+        {
+            FrmServicios frm= new FrmServicios();
+            CargarFormularioEnPanel(frm);
         }
     }
 }

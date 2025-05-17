@@ -17,7 +17,6 @@ namespace CADER
         {
             InitializeComponent();
             LblDay.Text = DateTime.Today.ToString("yyyy-MM-dd");
-            CargarDatos();
         }
 
         private void FrmMobiliario_Load(object sender, EventArgs e)
