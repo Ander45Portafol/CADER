@@ -63,6 +63,16 @@ namespace CADER.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_left {
+            get {
+                object obj = ResourceManager.GetObject("arrow-left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_out_left_square_half {
             get {
                 object obj = ResourceManager.GetObject("arrow-out-left-square-half", resourceCulture);
@@ -216,6 +226,16 @@ namespace CADER.Properties {
         internal static System.Drawing.Bitmap log_out_solid_24 {
             get {
                 object obj = ResourceManager.GetObject("log-out-solid-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mobile_login_rafiki_1 {
+            get {
+                object obj = ResourceManager.GetObject("Mobile login-rafiki 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

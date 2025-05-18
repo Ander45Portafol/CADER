@@ -42,7 +42,7 @@ namespace Modelo
             try
             {
                 string query = "INSERT INTO Usuarios (id_iglesia,nombre_usuario,apellido_usuario,correo_usuario,clave_usuario,telefono_usuario,dui_usuario,tipo_usuario ) " +
-                               "VALUES (@1,@Nombre,@Apellido,@Correo,@Clave,@Telefono,@DUI,@Tipo)";
+                               "VALUES (1,@Nombre,@Apellido,@Correo,@Clave,@Telefono,@DUI,@Tipo)";
                 using (SqlConnection connection = dbConnection.DatabaseConnection())
                 using (SqlCommand cmd = new SqlCommand(query, connection))
                 {

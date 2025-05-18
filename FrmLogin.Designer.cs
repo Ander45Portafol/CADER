@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TxtCorreo = new System.Windows.Forms.TextBox();
+            this.BtnIniciar = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.TxtClave = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.BtnIniciar = new System.Windows.Forms.Button();
+            this.TxtCorreo = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.BtnCerrarForm = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,57 +59,29 @@
             this.panel1.Size = new System.Drawing.Size(537, 615);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // BtnIniciar
             // 
-            this.pictureBox1.Image = global::CADER.Properties.Resources.freepik__background__48512_1;
-            this.pictureBox1.Location = new System.Drawing.Point(551, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(468, 537);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.BtnIniciar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIniciar.Location = new System.Drawing.Point(185, 478);
+            this.BtnIniciar.Name = "BtnIniciar";
+            this.BtnIniciar.Size = new System.Drawing.Size(182, 61);
+            this.BtnIniciar.TabIndex = 7;
+            this.BtnIniciar.Text = "Iniciar sesión";
+            this.BtnIniciar.UseVisualStyleBackColor = true;
+            this.BtnIniciar.Click += new System.EventHandler(this.BtnIniciar_Click);
             // 
-            // label1
+            // linkLabel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(135, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(303, 51);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "¡Bienvenidos!";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(157, 112);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(255, 27);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Ingresar credenciales";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(30, 229);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(248, 29);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Correo Electronico:";
-            // 
-            // TxtCorreo
-            // 
-            this.TxtCorreo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCorreo.Location = new System.Drawing.Point(68, 261);
-            this.TxtCorreo.Multiline = true;
-            this.TxtCorreo.Name = "TxtCorreo";
-            this.TxtCorreo.Size = new System.Drawing.Size(410, 41);
-            this.TxtCorreo.TabIndex = 3;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(276, 418);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(199, 16);
+            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "¿No tienes cuenta? Registrate";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // TxtClave
             // 
@@ -128,32 +100,51 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(30, 329);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(161, 29);
+            this.label4.Size = new System.Drawing.Size(129, 23);
             this.label4.TabIndex = 4;
             this.label4.Text = "Contraseña:";
             // 
-            // linkLabel1
+            // TxtCorreo
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(276, 418);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(249, 20);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "¿No tienes cuenta? Registrate";
+            this.TxtCorreo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCorreo.Location = new System.Drawing.Point(68, 261);
+            this.TxtCorreo.Multiline = true;
+            this.TxtCorreo.Name = "TxtCorreo";
+            this.TxtCorreo.Size = new System.Drawing.Size(410, 41);
+            this.TxtCorreo.TabIndex = 3;
             // 
-            // BtnIniciar
+            // label3
             // 
-            this.BtnIniciar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnIniciar.Location = new System.Drawing.Point(185, 478);
-            this.BtnIniciar.Name = "BtnIniciar";
-            this.BtnIniciar.Size = new System.Drawing.Size(182, 61);
-            this.BtnIniciar.TabIndex = 7;
-            this.BtnIniciar.Text = "Iniciar sesión";
-            this.BtnIniciar.UseVisualStyleBackColor = true;
-            this.BtnIniciar.Click += new System.EventHandler(this.BtnIniciar_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(30, 229);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(198, 23);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Correo Electronico:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(157, 112);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(255, 27);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Ingresar credenciales";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(135, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(298, 49);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "¡Bienvenidos!";
             // 
             // BtnCerrarForm
             // 
@@ -168,6 +159,16 @@
             this.BtnCerrarForm.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.BtnCerrarForm.UseVisualStyleBackColor = false;
             this.BtnCerrarForm.Click += new System.EventHandler(this.BtnCerrarForm_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CADER.Properties.Resources.freepik__background__48512_1;
+            this.pictureBox1.Location = new System.Drawing.Point(551, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(468, 537);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmLogin
             // 

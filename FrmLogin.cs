@@ -53,5 +53,12 @@ namespace CADER
                 TxtCorreo.Focus();
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmRegistrarUsuarios frmRegistrar = new FrmRegistrarUsuarios();
+            frmRegistrar.Show();
+            this.Hide();
+        }
     }
 }

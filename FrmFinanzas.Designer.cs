@@ -75,6 +75,7 @@
             this.BtnReporte.Text = "Reporte";
             this.BtnReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnReporte.UseVisualStyleBackColor = false;
+            this.BtnReporte.Click += new System.EventHandler(this.BtnReporte_Click);
             // 
             // label2
             // 

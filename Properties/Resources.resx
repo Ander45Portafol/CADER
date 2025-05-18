@@ -124,6 +124,9 @@
   <data name="bxs-guitar-amp 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bxs-guitar-amp 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bxs-calendar 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bxs-calendar 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bxs-home-alt-2 12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bxs-home-alt-2 12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,17 +139,20 @@
   <data name="bx-clipboard 11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bx-clipboard 11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrow-out-left-square-half" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrow-out-left-square-half.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="x-regular-241" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\x-regular-241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bxs-home-alt-2 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bxs-home-alt-2 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="freepik__background__48512 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\freepik__background__48512 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bxs-wallet 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bxs-wallet 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mobile login-rafiki 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mobile login-rafiki 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bxs-book-alt 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bxs-book-alt 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,8 +160,8 @@
   <data name="bxs-report 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bxs-report 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bxs-calendar 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bxs-calendar 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow-out-left-square-half" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-out-left-square-half.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bx-clipboard 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bx-clipboard 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,7 +178,7 @@
   <data name="plus-circle-regular-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plus-circle-regular-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="freepik__background__48512 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\freepik__background__48512 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
