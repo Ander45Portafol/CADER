@@ -63,6 +63,16 @@ namespace CADER.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_out_left_square_half {
+            get {
+                object obj = ResourceManager.GetObject("arrow-out-left-square-half", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bx_clipboard_1 {
             get {
                 object obj = ResourceManager.GetObject("bx-clipboard 1", resourceCulture);
@@ -186,6 +196,16 @@ namespace CADER.Properties {
         internal static System.Drawing.Bitmap bxs_wallet_1 {
             get {
                 object obj = ResourceManager.GetObject("bxs-wallet 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap freepik__background__48512_1 {
+            get {
+                object obj = ResourceManager.GetObject("freepik__background__48512 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

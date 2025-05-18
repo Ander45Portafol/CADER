@@ -111,5 +111,22 @@ namespace CADER
             FrmDonaciones frm= new FrmDonaciones();
             CargarFormularioEnPanel(frm);
         }
+
+        private void BtnAdministracion_Click(object sender, EventArgs e)
+        {
+            FrmAdministracion frm= new FrmAdministracion();
+            CargarFormularioEnPanel(frm);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Esta seguro de cerrar sesión?", "Cerrar sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                FrmLogin login = new FrmLogin();
+                this.Hide();
+                login.Show();
+            }
+        }
     }
 }

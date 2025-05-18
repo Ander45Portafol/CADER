@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.PanelContenido = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.BtnDonaciones = new System.Windows.Forms.Button();
             this.BtnServicios = new System.Windows.Forms.Button();
@@ -37,9 +40,7 @@
             this.BtnFinanzas = new System.Windows.Forms.Button();
             this.BtnMobiliario = new System.Windows.Forms.Button();
             this.BtnInicio = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.PanelContenido = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +48,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.BtnCerrar);
             this.panel1.Controls.Add(this.BtnDonaciones);
             this.panel1.Controls.Add(this.BtnServicios);
@@ -59,6 +61,41 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(208, 681);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(205, -1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(931, 43);
+            this.panel2.TabIndex = 1;
+            // 
+            // PanelContenido
+            // 
+            this.PanelContenido.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.PanelContenido.Location = new System.Drawing.Point(214, 48);
+            this.PanelContenido.Name = "PanelContenido";
+            this.PanelContenido.Size = new System.Drawing.Size(907, 617);
+            this.PanelContenido.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::CADER.Properties.Resources.arrow_out_left_square_half;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(3, 570);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(205, 48);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Cerrar Sesión";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BtnCerrar
             // 
@@ -126,6 +163,7 @@
             this.BtnAdministracion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAdministracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnAdministracion.UseVisualStyleBackColor = true;
+            this.BtnAdministracion.Click += new System.EventHandler(this.BtnAdministracion_Click);
             // 
             // BtnEventos
             // 
@@ -198,15 +236,6 @@
             this.BtnInicio.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             this.BtnInicio.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(205, -1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(931, 43);
-            this.panel2.TabIndex = 1;
-            // 
             // label1
             // 
             this.label1.Image = global::CADER.Properties.Resources.x_regular_24;
@@ -215,14 +244,6 @@
             this.label1.Size = new System.Drawing.Size(59, 46);
             this.label1.TabIndex = 0;
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // PanelContenido
-            // 
-            this.PanelContenido.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.PanelContenido.Location = new System.Drawing.Point(214, 48);
-            this.PanelContenido.Name = "PanelContenido";
-            this.PanelContenido.Size = new System.Drawing.Size(907, 617);
-            this.PanelContenido.TabIndex = 2;
             // 
             // Form1
             // 
@@ -260,6 +281,7 @@
         private System.Windows.Forms.Button BtnServicios;
         private System.Windows.Forms.Button BtnCerrar;
         private System.Windows.Forms.Panel PanelContenido;
+        private System.Windows.Forms.Button button1;
     }
 }
 

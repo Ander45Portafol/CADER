@@ -186,6 +186,7 @@
             this.Name = "FrmFormDonacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmFormDonacion";
+            this.Load += new System.EventHandler(this.FrmFormDonacion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

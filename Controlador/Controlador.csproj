@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministracionController.cs" />
     <Compile Include="CuotaController.cs" />
     <Compile Include="DonacionesController.cs" />
     <Compile Include="EventoController.cs" />

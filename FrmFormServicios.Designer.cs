@@ -35,11 +35,11 @@
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.BtnConfirmar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.BtnCerrarForm = new System.Windows.Forms.Button();
             this.cmbHorario = new System.Windows.Forms.ComboBox();
             this.cmbTipoServicio = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.CmbGrupo = new System.Windows.Forms.ComboBox();
+            this.BtnCerrarForm = new System.Windows.Forms.Button();
+            this.cmbGrupo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -118,20 +118,6 @@
             this.label5.TabIndex = 37;
             this.label5.Text = "label5";
             // 
-            // BtnCerrarForm
-            // 
-            this.BtnCerrarForm.BackColor = System.Drawing.Color.Transparent;
-            this.BtnCerrarForm.FlatAppearance.BorderSize = 0;
-            this.BtnCerrarForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrarForm.Image = global::CADER.Properties.Resources.x_regular_241;
-            this.BtnCerrarForm.Location = new System.Drawing.Point(652, 8);
-            this.BtnCerrarForm.Name = "BtnCerrarForm";
-            this.BtnCerrarForm.Size = new System.Drawing.Size(53, 37);
-            this.BtnCerrarForm.TabIndex = 36;
-            this.BtnCerrarForm.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.BtnCerrarForm.UseVisualStyleBackColor = false;
-            this.BtnCerrarForm.Click += new System.EventHandler(this.BtnCerrarForm_Click);
-            // 
             // cmbHorario
             // 
             this.cmbHorario.FormattingEnabled = true;
@@ -170,20 +156,34 @@
             this.label2.TabIndex = 48;
             this.label2.Text = "Tipo de Servicio";
             // 
-            // CmbGrupo
+            // BtnCerrarForm
             // 
-            this.CmbGrupo.FormattingEnabled = true;
-            this.CmbGrupo.Location = new System.Drawing.Point(64, 159);
-            this.CmbGrupo.Name = "CmbGrupo";
-            this.CmbGrupo.Size = new System.Drawing.Size(279, 24);
-            this.CmbGrupo.TabIndex = 49;
+            this.BtnCerrarForm.BackColor = System.Drawing.Color.Transparent;
+            this.BtnCerrarForm.FlatAppearance.BorderSize = 0;
+            this.BtnCerrarForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCerrarForm.Image = global::CADER.Properties.Resources.x_regular_241;
+            this.BtnCerrarForm.Location = new System.Drawing.Point(652, 8);
+            this.BtnCerrarForm.Name = "BtnCerrarForm";
+            this.BtnCerrarForm.Size = new System.Drawing.Size(53, 37);
+            this.BtnCerrarForm.TabIndex = 36;
+            this.BtnCerrarForm.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BtnCerrarForm.UseVisualStyleBackColor = false;
+            this.BtnCerrarForm.Click += new System.EventHandler(this.BtnCerrarForm_Click);
+            // 
+            // cmbGrupo
+            // 
+            this.cmbGrupo.FormattingEnabled = true;
+            this.cmbGrupo.Location = new System.Drawing.Point(64, 161);
+            this.cmbGrupo.Name = "cmbGrupo";
+            this.cmbGrupo.Size = new System.Drawing.Size(279, 24);
+            this.cmbGrupo.TabIndex = 49;
             // 
             // FrmFormServicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 456);
-            this.Controls.Add(this.CmbGrupo);
+            this.Controls.Add(this.cmbGrupo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbTipoServicio);
             this.Controls.Add(this.cmbHorario);
@@ -217,6 +217,6 @@
         private System.Windows.Forms.ComboBox cmbHorario;
         private System.Windows.Forms.ComboBox cmbTipoServicio;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox CmbGrupo;
+        private System.Windows.Forms.ComboBox cmbGrupo;
     }
 }

@@ -25,6 +25,7 @@ namespace CADER
             state_window = false;
             BtnEliminar.Visible = false;
             label5.Text = "INGRESAR";
+            Cargar_Datos();
         }
         public FrmFormServicios(int id)
         {
@@ -34,6 +35,7 @@ namespace CADER
             BtnEliminar.Visible = true;
             label5.Text = "MODIFICAR";
             CargarServicio();
+            Cargar_Datos();
         }
         void Cargar_Datos()
         {
@@ -47,10 +49,10 @@ namespace CADER
                 newRow["nombre_grupo"] = "Seleccione una opción";
                 grupos.Rows.InsertAt(newRow, 0); // 
                 // Asigna el DataTable al ComboBox de la libreria
-                CmbGrupo.DataSource = grupos;
-                CmbGrupo.DisplayMember = "nombre_grupo";
-                CmbGrupo.ValueMember = "id_grupo";
-                CmbGrupo.SelectedIndex = 0;
+                cmbGrupo.DataSource = grupos;
+                cmbGrupo.DisplayMember = "nombre_grupo";
+                cmbGrupo.ValueMember = "id_grupo";
+                cmbGrupo.SelectedIndex = 0;
 
             }
             catch (Exception)
@@ -68,8 +70,8 @@ namespace CADER
                 SERVC.Id_Servicio = id_servicio;
                 DataTable dt = SERVC.CargarServicio();
                 txtNombre.Text = dt.Rows[0]["nombre_encargado"].ToString();
-                CmbGrupo.Text = dt.Rows[0]["nombre_grupo"].ToString();
-                MessageBox.Show(dt.Rows[0]["nombre_grupo"].ToString());
+                cmbGrupo.Text = dt.Rows[0]["nombre_grupo"].ToString();
+                //MessageBox.Show(dt.Rows[0]["nombre_grupo"].ToString());
                 cmbHorario.Text = dt.Rows[0]["horario"].ToString();
                 cmbTipoServicio.Text = dt.Rows[0]["tipo_servicio"].ToString();
             }
@@ -85,7 +87,7 @@ namespace CADER
                 // Crear una instancia usando el constructor vacío
                 ServiciosController SERVC = new ServiciosController();
                 // Asignar propiedades una por una
-                SERVC.Id_Grupo = Convert.ToInt32(CmbGrupo.SelectedValue);
+                SERVC.Id_Grupo = Convert.ToInt32(cmbGrupo.SelectedValue);
                 SERVC.Tipo_Servicio = cmbTipoServicio.SelectedItem.ToString();
                 SERVC.Nombre_Encargado = txtNombre.Text;
                 SERVC.Horario = cmbHorario.SelectedItem.ToString();
@@ -115,7 +117,7 @@ namespace CADER
                 ServiciosController SERVC = new ServiciosController();
                 // Asignar propiedades una por una
                 SERVC.Id_Servicio = id_servicio;
-                SERVC.Id_Grupo = Convert.ToInt32(CmbGrupo.SelectedValue);
+                SERVC.Id_Grupo = Convert.ToInt32(cmbGrupo.SelectedValue);
                 SERVC.Tipo_Servicio = cmbTipoServicio.SelectedItem.ToString();
                 SERVC.Nombre_Encargado = txtNombre.Text;
                 SERVC.Horario = cmbHorario.SelectedItem.ToString();
@@ -165,12 +167,20 @@ namespace CADER
         }
         private void BtnCerrarForm_Click(object sender, EventArgs e)
         {
+            state_window = false;
             this.Close();
         }
 
         private void FrmFormServicios_Load(object sender, EventArgs e)
         {
-            Cargar_Datos();
+            if (state_window)
+            {
+                CargarServicio();
+            }
+            else
+            {
+
+            }
         }
         protected virtual void OnDatoAgregado(EventArgs e)
         {

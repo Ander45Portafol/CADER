@@ -197,5 +197,17 @@ namespace CADER
                 this.Close();
             }
         }
+
+        private void FrmFormDonacion_Load(object sender, EventArgs e)
+        {
+            if (state_window)
+            {
+                CargarDonacion();
+            }
+            else
+            {
+
+            }
+        }
     }
 }
